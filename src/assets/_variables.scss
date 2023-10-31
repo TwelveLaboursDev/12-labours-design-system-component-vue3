@@ -1,0 +1,51 @@
+// Primary colors
+$darkBlue: #24245B;     //TBC- if needed 
+$blue: #00467F;         
+$grey: #262626;    
+
+// Secondary colors
+$red: #D11241;      
+$mildBlue: #0080A7;       
+
+// Status colors        
+$success: #5e9f69;
+$warning: #FF8400;
+$danger: #b51d09;
+
+// Some other colors
+$neutralGrey: #616161;      //TBC- if needed 
+$mediumGrey: #606266;    
+$lightGrey: #F8F8F8;    
+$darkRed: #AC0E35;
+
+// Line colors
+$lineColor1: #D1D1D1;      
+$lineColor2: #DFDFDF;  
+
+// Background colors
+$background: $lightGrey; 
+$cochlear: #FFFFFF;
+$tooltipColor: #f3ecf6;
+
+//Main colors
+$app-primary-color: $blue; 
+$app-secondary-color: $red;    
+$text-color: $grey;
+$input-text: $grey;
+
+$system-font:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+$font-family: Arimo;
+
+// Viewport Sizes
+/*$viewport-sm: 48rem;
+$viewport-md: 64rem;
+$viewport-lg: 120rem;
+$viewport-xlg: 120rem;*/
+
+$viewport-sm:768px;
+$viewport-md:1024px;
+$viewport-lg:1900px;
+$viewport-xlg:1900px;
+
+$md-start:calc($viewport-sm + 1px);  //769
+$md-end:calc($viewport-md - 1px);   //1023

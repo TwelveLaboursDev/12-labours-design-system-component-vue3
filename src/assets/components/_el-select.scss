@@ -1,0 +1,106 @@
+@import '../_variables.scss';
+
+.el-select {
+
+  .el-input {
+    input::placeholder {
+      padding-top: 0.625rem;
+      color:$input-text;
+    }
+    .el-select__caret::before{
+      content: '\e605';
+      color:#808080;
+      font-size: 1.6rem;
+    }
+    .el-select__caret.is-reverse {
+      padding-top: 0.5rem;
+    }
+
+    &__inner {
+      &:hover {
+        border-color: $lightGrey !important;
+      }
+      &:focus {
+        border-color: $grey !important;
+      }
+    }
+
+    &.is-disabled {
+      input {
+        border-color:  $lineColor1;
+      }
+      .el-select__caret{
+        color: $lightGrey;
+      }
+      
+      .el-input__inner {
+        &:hover {
+          border-color: $lightGrey !important;
+        }
+      }
+    }
+
+    &.secondary {
+      .el-input {
+        input {
+          border-color: lightgray;   
+        }
+      }
+    }
+
+    .el-select__caret {
+      color: $mediumGrey;
+    }
+  }
+
+  &.--sm{
+    .el-input {   
+      input {
+        max-width:10rem;
+      }
+    }
+  }
+  
+  &.--lg{
+    .el-input {   
+      input {
+        width:100%;
+        @media only screen and (min-width: $viewport-md) {
+          min-width:30rem;        
+        }
+      } 
+    }
+  }
+
+  &.dropdown1 {
+    max-width: 9.38rem;
+  }
+
+  &.dropdown2 {
+    .el-input {   
+      input {
+        background-color:$lineColor1;
+        opacity: 0.35;
+      }
+      .el-select__caret::before {
+        color:$lineColor1;
+      }
+    }
+  }
+}
+
+.el-select-group__title {
+  color: $blue;
+  font-size: 0.88rem;
+  font-weight: bold;
+}
+
+
+// HACK: The only way to edit the icon in the select
+// input box is to directly change the content value
+// of the <i> tag.
+.el-icon-arrow-up {
+  &::before {
+    content: ''
+  }
+}

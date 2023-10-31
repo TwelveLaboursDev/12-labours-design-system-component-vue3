@@ -1,0 +1,27 @@
+@import '../_variables';
+
+.el-form-item{
+
+  &__label{
+    color:inherit !important;
+    font-size:inherit !important;
+    line-height:unset !important;
+    font-weight:600 !important;
+    padding:0px !important;
+  }
+
+  &.is-required:not(.is-no-asterisk)>.el-form-item__label{ 
+    &:after {
+      content: "*";
+      color: $app-secondary-color !important;
+      margin-left: 4px !important;
+    }
+    &:before{
+      content:"";    // Delete asterisk from default(left) position
+    }
+  }
+  
+  div.error{
+    color:$app-secondary-color !important;
+  }
+}

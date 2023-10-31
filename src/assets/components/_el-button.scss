@@ -1,0 +1,79 @@
+@import '../_variables.scss';
+
+.el-button {
+  background: $red !important;
+  box-sizing: border-box !important;
+  border-radius: 1rem !important;
+  color: $cochlear !important;
+  text-transform: uppercase !important;
+  font: {
+    size: 1.13rem !important;
+    family: $font-family !important;
+    weight: 600 !important; 
+  }
+  padding:0.25rem 2.5rem !important;
+  height: 2rem !important;
+  &:hover{
+    background:$darkRed !important; 
+    color: $cochlear !important;
+  }
+  &:focus{
+    background: $red !important;
+    color: $cochlear !important;
+  }
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
+    background: $lineColor1;
+    color:  $mediumGrey;
+    opacity: 0.35;
+  }
+
+  &.large {
+    text-align: center;
+  }
+
+  &.small,
+  &.extra-small {
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    padding: 0.56rem 0.88rem;
+  }
+
+  &.extra-small {
+    padding: 0.31rem 0.88rem;
+  }
+
+  &.secondary{
+    background:#F8DBE2;
+    border: 2px solid $red;
+    color: $red;
+    &:hover{
+      background:#F1B7C5; 
+      border: 2px solid $darkRed;  
+      color: $darkRed ;  
+    }
+  }
+  
+  &.secondary[disabled],
+  &.secondary[disabled]:hover,
+  &.secondary[disabled]:focus {
+    background: $lineColor1;
+    border: 2px solid $lineColor1;
+    color:  $mediumGrey;
+    opacity:.35;
+  }
+
+  &.danger,
+  &.danger[disabled],
+  &.danger[disabled]:hover,
+  &.danger[disabled]:focus {
+    background: $danger;
+    border-color: $danger;
+    color: $cochlear;
+  }
+
+  &.is-circle {
+    padding: 0.25rem;
+  }
+}

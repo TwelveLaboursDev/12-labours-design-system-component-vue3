@@ -1,0 +1,114 @@
+@import './_variables';
+
+body {
+  font-family: $font-family;
+  font-size:1.13rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color:$text-color;
+  margin: 0;
+}
+
+.body2{
+  font-weight: 600 !important;
+}
+
+h1 {
+  font-size: 1.88rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color:$app-primary-color;
+  @media only screen and (max-width:  $viewport-md) {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.13rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color:$app-primary-color
+}
+
+h3{
+  font-size: 1.13rem;
+  line-height:  1.5rem;
+  font-weight: 600;
+  color:$app-primary-color;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color:$app-primary-color;
+  @media only screen and (max-width:  $viewport-md) {
+    font-weight:600;
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  color: $app-secondary-color !important;
+  font-size: 0.88rem;
+  line-height: 1.5rem;
+  text-decoration: underline !important;
+  &:not(.underline) {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none  !important;
+  }
+}
+
+p {
+  margin: auto;
+}
+
+hr {
+  margin: 0 0 1rem;
+}
+
+input {
+  color: $input-text;
+  font-family: $font-family;
+  font-size: inherit;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav1 {
+  font-size:1rem;
+  line-height:1.12rem;
+  font-weight:400;
+  color: $app-primary-color;
+  &:selected {
+    font-weight:700;
+  }
+}
+
+.nav5 {
+  font-size:0.75rem;
+  line-height:1.5rem;
+  font-weight:400;
+  color: $cochlear;
+}
+
+
+.field1{
+font-size: 1rem;
+line-height: 1.25rem;
+}
+
+.field-info
+{
+  padding-top: 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+  font-style: italic;
+}
+
